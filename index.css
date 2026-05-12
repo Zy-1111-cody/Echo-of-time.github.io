@@ -1,0 +1,904 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+
+
+html{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.site-header{
+    width: 1440px;
+    height: 100px;
+    background-color: #000000;
+    border-bottom: 1px solid #DDDDDD ;
+}
+
+.logo{
+    height: 82px;
+    width: 73px;
+    position: absolute;
+    left: 400px;
+    top: 20px;
+}
+
+.title{
+    position: absolute;
+    left: 500px;
+    top: 20px;
+}
+.nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    position: absolute;
+    left: 1200px;
+    top: 50px;
+}
+
+
+.HOME{
+    width: 1440px;
+    height: 210px;
+    background-color: #000000;
+    border-bottom: 1px solid #DDDDDD ;
+    padding: 10px 0;
+}
+
+.main-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: absolute;
+    left: 600px;
+}
+
+.main-menu li{
+    position: relative;
+}
+
+.main-menu a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.top{
+    position: absolute;
+    left: 400px;
+    top: 350px;
+}
+
+.topa{
+    position: absolute;
+    left: 1000px;
+    top: 400px;
+    right: 300px;
+}
+
+.butten{
+    position: relative;
+    width: 200px;
+    height: 60px;
+    margin: 30px;
+}
+
+.butten a{
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(12, 134, 143, 0.986);
+    box-shadow: 0 15px 35px rgb(7, 88, 110),0.2;
+    border-top: 1px solid #34ccf1d2;
+    border-radius: 30px;
+    color: #FFFFFF;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+}
+
+.butten :hover a{
+    letter-spacing: 5px;
+}
+
+.butten a ::before{
+    content: "";
+    position: absolute;
+    top: 300px;
+    left: 500pxp;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,transparent,rgba(255,255,255,0.15));
+    transform: skewX(45deg) translateX(0);
+}
+
+.dropdown .sub-menu{
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    background-color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px 0;
+    list-style: none;
+    margin: 0;
+    z-index: 1000;
+}
+
+.dropdown .sub-menu li{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown .sub-menu a{
+    padding: 10px 20px;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+.dropdown .sub-menu a:hover{
+    background-color: #434342;
+}
+
+.dropdown:hover .sub-menu {
+    display: block;
+}
+
+.introduction{
+    width: 1440px;
+    height: 420px;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.introduction img{
+    height: 287px;
+    width: 452px;
+}
+
+.introduction p{
+    color: #FFFFFF;
+}
+
+.CONTENTS{
+    width: 1440px;
+    height: 1200px;
+    background-color: #2E1C10;
+    margin: 0;
+    padding: 0;
+}
+
+.CONTENTS .th{
+    background-color: #2DACA5;
+    position: absolute;
+    left: 400px;
+    right: 950px;
+    top: 1050px;
+    color: #000000;
+}
+
+.CONTENTS .tha{
+    background-color: #6B4329;
+    position: absolute;
+    left: 950px;
+    right: 400px;
+    top: 1050px;
+    color: #000000;
+}
+
+.CONTENTS .bg{
+    background-color: #1D4946;
+    position: absolute;
+    left: 400px;
+    right: 950px;
+    top: 1055px;
+}
+
+.CONTENTS .bga{
+    background-color: #825B41;
+    position: absolute;
+    left: 950px;
+    right: 400px;
+    top: 1055px;
+}
+
+.CONTENTS h1{
+    color: #07FFF3;
+    position: relative;
+    top: 25px;
+    left: 200px;
+}
+
+.CONTENTS p{
+    color: #FFFFFF;
+    position: relative;
+    left: 500px;
+    top: 70px;
+}
+.CONTENTS .A{
+    color: #FFFFFF;
+    position: relative;
+    top: 80px;
+    left: 400px;
+}
+.CONTENTS .B{
+    color: #FFFFFF;
+    position: relative;
+    top: 620px;
+    left: 400px;
+}
+.CONTENTS .text{
+    color: #FFFFFF;
+    position: absolute;
+    top: 1650px;
+    left: 400px;
+    right: 500px;
+}
+
+.CONTENTS li{
+    color: #FFFFFF;
+}
+
+.CONTENTS th{
+    color: #FFFFFF;
+}
+
+.CULTURE{
+    width: 1440px;
+    height: 2800px;
+    background-color: #2E1C10;
+    margin: 0;
+    padding: 0;
+}
+.CULTURE h1{
+    color: #07FFF3;
+    position: relative;
+    top: 25px;
+    left: 200px;
+}
+.CULTURE .word{
+    color: #FFFFFF;
+    position: relative;
+    top: 50px;
+    left: 370px;
+}
+.CULTURE .a{
+    color: #FFFFFF;
+    position: relative;
+    left: 500px;
+    top: 50px;
+}
+.CULTURE .b{
+    color: #FFFFFF;
+    position: absolute;
+    left: 600px;
+    right: 600px;
+    top: 2250px;
+    text-align: center;
+}
+.CULTURE .game{
+    color: #FFFFFF;
+    position: absolute;
+    top: 2350px;
+    left: 600px;
+}
+.CULTURE p,h2,h3,h4,li{
+    color: #FFFFFF;
+}
+.CULTURE .diva{
+    position: absolute;
+    left: 500px;
+    top: 2400px;
+    right: 500px;
+}
+.CULTURE .v{
+    position: absolute;
+    top: 3000px;
+    left: 600px;
+}
+.CULTURE .video{
+    position: absolute;
+    top: 3100px;
+    left: 900px;
+}
+.CULTURE .map{
+    position: absolute;
+    top: 3400px;
+    left: 600px;
+}
+.CULTURE .divv{
+    position: absolute;
+    top: 3500px;
+    left: 450px;
+}
+.CULTURE .card{
+    position: relative;
+    left: -150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CULTURE .card .box{
+    position: relative;
+    max-width: 200px;
+    height: 75px;
+    background-color: #000000;
+    margin: 10px 15px;
+    padding: 20px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+.CULTURE .card .box:hover{
+    height: 420px;
+}
+.CULTURE .card .box .img-box{
+    position: relative;
+    width: 140px;
+    height: 105px;
+    border-radius: 5px;
+    overflow: hidden;
+    top: -40px;
+    left: 30px;
+    box-shadow: 0 5px 20pc rgb(67, 67, 66);
+}
+.CULTURE .card .box .img-box img{
+    width: 100%;
+}
+.CULTURE .card .box .texe-box{
+    position: relative;
+    margin-top: -120px;
+    padding: 5px 10px;
+    height: 200px;
+    text-align: center;
+    color: #07FFF3;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.CULTURE .GX{
+    text-align: center;
+    line-height: 25px;
+    margin-top: -40px;
+    font-size: 20px;
+    color: #07FFF3;
+    opacity: 0;
+    transition: visibility 0.3s, ease-in-out;
+}
+.CULTURE .GX:hover{
+    opacity: 1;  
+}
+.CULTURE .Px{
+    text-align: left;
+    line-height: 15px;
+    margin-top: -20px;
+    font-size: 13px;
+    color: #DDDDDD;
+    opacity: 0;
+    transition: visibility 0.3s, ease;
+}
+.CULTURE .Px:hover{
+    opacity: 1;  
+}
+.CULTURE .card .box:hover .texe-box{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.2s;
+}
+
+.AUDIJVISUALE{
+    width: 1440px;
+    height: 2700px;
+    background-color: #2E1C10;
+    margin: 0;
+    padding: 0;
+}
+
+.AUDIJVISUALE h1{
+    color: #07FFF3;
+    position: relative;
+    top: 25px;
+    left: 200px;
+}
+
+.AUDIJVISUALE h2{
+    color: #FFFFFF;
+}
+.AUDIJVISUALE .O{
+    color: #FFFFFF;
+    position: absolute;
+    left: 600px;
+    top: 4950px;
+}
+.AUDIJVISUALE .Oz{
+    color: #FFFFFF;
+    position: absolute;
+    left: 500px;
+    right: 500px;
+    top: 5000px;
+}
+.AUDIJVISUALE .L{
+    color: #FFFFFF;
+    position: absolute;
+    left: 600px;
+    top: 5130px;
+}
+.AUDIJVISUALE .Lz{
+    color: #FFFFFF;
+    position: absolute;
+    left: 400px;
+    right: 400px;
+    top: 5180px;
+}
+.AUDIJVISUALE .Y{
+    color: #FFFFFF;
+    position: absolute;
+    left: 600px;
+    top: 5350px;
+}
+.AUDIJVISUALE .Yz{
+    color: #FFFFFF;
+    position: absolute;
+    left: 400px;
+    right: 400px;
+    top: 5400px;
+}
+.AUDIJVISUALE .Yzz{
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+}
+.PLAYER{
+    width: 1440px;
+    height: 4200px;
+    background-color: #2E1C10;
+    margin: 0;
+    padding: 0;
+}
+.PLAYER .S{
+    position: absolute;
+    left: 600px;
+}
+.PLAYER .Sz{
+    position: absolute;
+    left: 700px;
+}
+.PLAYER .Xx{
+    position: absolute;
+    left: 600px;
+}
+.PLAYER .Szz{
+    position: absolute;
+    text-align: center;
+}
+
+.PLAYER .T,.Tz{
+    text-align: center;
+}
+.PLAYER .Liya{
+    position: absolute;
+    left: 250px;
+    top: 100px;
+}
+.PLAYER .Kaien{
+    position: absolute;
+    left: 550px;
+    top: 100px;
+}
+.PLAYER .Mila{
+    position: absolute;
+    left: 850px;
+    top: 100px;
+}
+.PLAYER .Xxz{
+    position: absolute;
+    left: 600px;
+    top: 8450px;
+}
+.PLAYER .Szx{
+    position: absolute;
+    top: 8400px;
+    text-align: center;
+}
+.PLAYER .shen{
+    position: absolute;
+    left: 250px;
+    top: 150px;
+}
+.PLAYER .You{
+    position: absolute;
+    left: 550px;
+    top: 150px;
+}
+.PLAYER .GONG{
+    position: absolute;
+    left: 850px;
+    top: 150px;
+}
+.PLAYER .Xzx{
+    position: absolute;
+    left: 700px;
+    top: 9000px;
+}
+.PLAYER .Sxz{
+    position: absolute;
+    top: 9000px;
+    text-align: center;
+}
+.PLAYER .JI{
+    position: absolute;
+    left: 250px;
+    top: 100px;
+}
+.PLAYER .SHOU{
+    position: absolute;
+    left: 550px;
+    top: 100px;
+}
+.PLAYER .SHI{
+    position: absolute;
+    left: 850px;
+    top: 100px;
+}
+.PLAYER .R{
+    position: absolute;
+    left: 600px;
+    top: 9500px;
+}
+.PLAYER .Rz{
+    position: absolute;
+    top: 9570px;
+}
+.PLAYER .W{
+    position: absolute;
+    left: 800px;
+    top: 11300px;
+}
+.PLAYER .Wz{
+    position: absolute;
+    top: 11400px;
+    left: 400px;
+    right: 500px;
+}
+.PLAYER .Wzz{
+    position: absolute;
+    top: 11450px;
+    left: 400px;
+    right: 500px;
+}
+.PLAYER .Wzx{
+    position: absolute;
+    top: 11550px;
+    left: 400px;
+    right: 500px;
+}
+.PLAYER .Wxz{
+    position: absolute;
+    top: 11620px;
+    left: 400px;
+    right: 500px;
+}
+.PLAYER .V{
+    position: absolute;
+    left: 500px;
+    font-size: 23px;
+    width: 600px;
+}
+.PLAYER .VX{
+    position: absolute;
+    left: 600px;
+    top: 80px;
+    font-size: 20px;
+    width: 600px;
+}
+
+.PLAYER .img1{
+    height: 171px;
+    width: 95px;
+    position:absolute;
+    top: 150px;
+    left: 300px;
+}
+.PLAYER .Vx{
+    position: absolute;
+    left: 500px;
+    top: 150px;
+    width: 600px;
+}
+.PLAYER .VZ{
+    position: absolute;
+    left: 600px;
+    top: 430px;
+    font-size: 20px;
+    width: 600px;
+}
+.PLAYER .Vz{
+    position: absolute;
+    left: 500px;
+    top: 500px;
+    width: 600px;
+}
+.PLAYER .img2{
+    height: 113px;
+    width: 89px;
+    position: absolute;
+    left: 300px;
+    top: 500px;
+}
+
+.PLAYER .VC{
+    position: absolute;
+    left: 600px;
+    top: 730px;
+    font-size: 20px;
+    width: 600px;
+}
+.PLAYER .Vc{
+    position: absolute;
+    left: 500px;
+    top: 800px;
+    width: 600px;
+}
+.PLAYER .img3{
+    height: 100px;
+    width: 92px;
+    position: absolute;
+    left: 300px;
+    top: 800px;
+}
+.PLAYER .M{
+    position: absolute;
+    left: 500px;
+    font-size: 23px;
+    top: 1050px;
+    width: 600px;
+}
+.PLAYER .MX{
+    position: absolute;
+    left: 600px;
+    top: 1150px;
+    font-size: 20px;
+    width: 600px;
+}
+.PLAYER .img4{
+    height: 88px;
+    width: 97px;
+    position: absolute;
+    left: 300px;
+    top: 1230px;
+}
+.PLAYER .Mx{
+    position: absolute;
+    left: 500px;
+    top: 1230px;
+    width: 600px;
+}
+.PLAYER .MZ{
+    position: absolute;
+    left: 600px;
+    top: 1400px;
+    font-size: 20px;
+    width: 600px;
+}
+.PLAYER .img5{
+    height: 96px;
+    width: 95px;
+    position: absolute;
+    left: 300px;
+    top: 1450px;
+}
+.PLAYER .Mz{
+    position: absolute;
+    left: 500px;
+    top: 1450px;
+    width: 600px;
+}
+
+.PLAYER h1{
+    color: #07FFF3;
+    position: relative;
+    top: 25px;
+    left: 200px;
+}
+
+.PLAYER h2{
+    color: #FFFFFF;
+}
+
+.PLAYER p{
+    color: #FFFFFF;
+}
+
+.PLAYER li{
+    color: #FFFFFF;
+}
+
+.MINE{
+    width: 1440px;
+    height: 1300px;
+    background-color: #2E1C10;
+    margin: 0;
+    padding: 0;
+}
+.MINE .MI{
+    text-align: center;
+    font-size: 25px;
+}
+.MINE .circle{
+    width: 200px;
+    height: 200px;
+    background-color: #80807c;
+    border-radius: 50%;
+    position: relative;
+    left: 400px;
+    top: 100px;
+}
+.MINE .form-group{
+    width: 400px;
+    height: 200px;
+    font-size: 20px;
+}
+.MINE .ming{
+    width: 400px;
+    height: 56px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: -30px;
+    left: 700px;
+}
+.MINE .cheng{
+    width: 400px;
+    height: 56px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    left: 700px;
+    top: -150px;
+}
+.MINE .lable-like{
+    color: #FFFFFF;
+    position: relative;
+    left: 850px;
+    top: -130px;
+    font-size: 20px;
+}
+.MINE .radio-group{
+    color: #FFFFFF;
+    position: relative;
+    left: 700px;
+    top: -100px;
+}
+.MINE h1{
+    color: #07FFF3;
+    position: relative;
+    top: 25px;
+    left: 200px;
+}
+
+.MINE .GJ{
+    color: #FFFFFF;
+    position: relative;
+    left: 300px;
+    top: -200px;
+}
+.MINE .CJ{
+    color: #FFFFFF;
+    position: relative;
+    left: 300px;
+    top: -300px;
+}
+.MINE .F{
+    width: 100px;
+    height: 100px;
+    background-color: #80807c;
+    position: relative;
+    left: 300px;
+    top: -180px;
+}
+.MINE .FX{
+    width: 100px;
+    height: 100px;
+    background-color: #80807c;
+    position: relative;
+    left: 450px;
+    top: -380px;
+}
+.MINE .FZ{
+    width: 100px;
+    height: 100px;
+    background-color: #80807c;
+    position: relative;
+    left: 600px;
+    top: -280px;
+}
+.MINE .cj{
+    color: #FFFFFF;
+    position: relative;
+    left: 300px;
+    top: -300px;
+}
+.MINE p{
+    color: #FFFFFF;
+}
+
+.MINE h3{
+    color: #FFFFFF;
+}
+
+.site-footer{
+    width: 1440px;
+    height: 400px;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+.site-footer .folg{
+    width: 98px;
+    height: 110px;
+    position: relative;
+    left: 183px;
+    top: 50px;
+}
+.site-footer p{
+    color: #FFFFFF;
+}
+
+.site-footer h1{
+    color: #07FFF3;
+    position: relative;
+    left: 330px;
+    top: -40px;
+}
+.footer .renyuan{
+    position: relative;
+    left: 200px;
+    top: -10px;
+    font-size: 25px;
+}
+.footer .Z{
+    position: relative;
+    left: 500px;
+    top: -30px;
+    font-size: 20px;
+}
+.footer .ZP{
+    position: relative;
+    left: 350px;
+    top: -10px;
+}
+.footer .AN{
+    position: relative;
+    left: 900px;
+    top: -110px;
+    font-size: 20px;
+}
+.footer .ANP{
+    position: relative;
+    left: 750px;
+    top: -85px;
+}
